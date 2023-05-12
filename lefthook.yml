@@ -1,0 +1,8 @@
+pre-commit:
+  commands:
+    format:
+      run: poetry run black .
+pre-push:
+  commands:
+    mypy:
+      run: poetry run mypy .
