@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "cosmicpython-fastapi"
+version = "0.1.0"
+description = ""
+authors = ["Pavel Vergeev <vergeev@icloud.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.1"
+
+[tool.poetry.dev-dependencies]
+black = "^23.3.0"
+mypy = "^1.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

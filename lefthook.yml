@@ -1,0 +1,10 @@
+pre-commit:
+  parallel: true
+  commands:
+    format:
+      glob: "*.py"
+      run: poetry run black {staged_files} && git add {staged_files}
+pre-push:
+  commands:
+    mypy:
+      run: poetry run mypy .
